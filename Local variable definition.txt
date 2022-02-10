@@ -1,0 +1,10 @@
+# Local variable definition
+>>> enz = []
+>>> def add_enz(*new):
+... enz = enz + list(new)
+...
+>>> def add_enz(*new):
+... enz.extend(list(new))
+>>> add_enz(’EcoRI’)
+>>> enz
+[’EcoRI’]
